@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>jQuery Mobile: Theme Download</title>	  
+        <link rel="stylesheet" href="css/jquery.mobile.structure-1.3.0.min.css" />
+        <link rel="stylesheet" href="css/jqm.grid.css" />
+        <link rel="stylesheet/less" type="text/css" href="less/theme.less">        
+		<script src="js/jquery-1.9.1.min.js"></script>
+		<script src="js/jquery.mobile-1.3.0.min.js"></script>
+        <script src="js/less-1.3.3.min.js"></script>        
+	</head>
+	<body>
+		<div data-role="page" data-theme="b">
+		<div data-role="header" data-theme="b" data-inline="true">
+
+    <h1>I'm a header</h1>
+
+
+    <div data-role="navbar" data-inline="true">
+    <div class="row">
+        <ul>
+            <li><a href="#" data-theme="b" data-icon="home" data-inline="true" class="ui-icon-nodisc" data-iconpos="notext" data-iconshadow="false" >Home</a></li>
+            <li><a href="#" data-theme="b" data-icon="minus" data-inline="true" class="ui-icon-nodisc" data-iconpos="notext" data-iconshadow="false">Two</a></li>
+            <li><a href="#" data-theme="b" data-icon="edit" data-inline="true" class="ui-icon-nodisc" data-iconpos="notext" data-iconshadow="false">Three</a></li>
+        </ul>
+        </div>
+    </div><!-- /navbar -->
+</div><!-- /header -->
+			<div data-role="content" data-theme="b" ><div class="row">
+				<p>Your theme was successfully downloaded. You can use this page as a reference for how to link it up!</p>
+				<p>This is content color swatch "A" and a preview of a <a href="#" class="ui-link">link</a>.</p>
+				<label for="slider1">Input slider:</label>
+				<input type="range" name="slider1" id="slider1" value="50" min="0" max="100" data-theme="b"/>
+				<fieldset data-role="controlgroup"  data-type="horizontal" data-role="fieldcontain">
+				<legend>Cache settings:</legend>
+				<input type="radio" name="radio-choice-a1" id="radio-choice-a1" value="on" checked="checked" />
+				<label for="radio-choice-a1">On</label>
+				<input type="radio" name="radio-choice-a1" id="radio-choice-b1" value="off"  />
+				<label for="radio-choice-b1">Off</label>
+				</fieldset>
+                <fieldset data-role="controlgroup" data-theme="b">
+    <legend>Checkboxes, vertical controlgroup:</legend>
+    <input name="checkbox-1a" id="checkbox-1a" checked="" type="checkbox" data-theme="b">
+    <label for="checkbox-1a">Cheetos</label>
+    <input name="checkbox-2a" id="checkbox-2a" type="checkbox" data-theme="b">
+    <label for="checkbox-2a">Doritos</label>
+    <input name="checkbox-3a" id="checkbox-3a" type="checkbox" data-theme="b">
+    <label for="checkbox-3a">Fritos</label>
+    <input name="checkbox-4a" id="checkbox-4a" type="checkbox" data-theme="b">
+    <label for="checkbox-4a">Sun Chips</label>
+</fieldset>
+<fieldset data-role="controlgroup" data-theme="b">
+    <legend>Radio buttons, vertical controlgroup:</legend>
+        <input name="radio-choice-1" id="radio-choice-1" value="choice-1" checked="checked" type="radio" data-theme="b">
+        <label for="radio-choice-1">Cat</label>
+        <input name="radio-choice-1" id="radio-choice-2" value="choice-2" type="radio" data-theme="b">
+        <label for="radio-choice-2">Dog</label>
+        <input name="radio-choice-1" id="radio-choice-3" value="choice-3" type="radio" data-theme="b">
+        <label for="radio-choice-3">Hamster</label>
+        <input name="radio-choice-1" id="radio-choice-4" value="choice-4" type="radio" data-theme="b">
+        <label for="radio-choice-4">Lizard</label>
+</fieldset>
+<a href="#popupLogin" data-rel="popup" data-position-to="window" data-role="button" data-inline="true" data-icon="check" data-theme="b" data-transition="pop">Sign in</a>
+<div data-role="popup" id="popupMenu" data-theme="b">
+    <div data-role="popup" id="popupLogin" data-theme="b" class="ui-corner-all">
+        <form>
+            <div style="padding:10px 20px;">
+              <h3>Please sign in</h3>
+              <label for="un" class="ui-hidden-accessible">Username:</label>
+              <input name="user" id="un" value="" placeholder="username" data-theme="b" type="text">
+              <label for="pw" class="ui-hidden-accessible">Password:</label>
+              <input name="pass" id="pw" value="" placeholder="password" data-theme="b" type="password">
+              <button type="submit" data-theme="b" data-icon="check">Sign in</button>
+            </div>
+        </form>
+    </div>
+</div>
+<div data-role="collapsible-set" data-theme="b" data-content-theme="c">
+    <div data-role="collapsible">
+        <h3>Section 1</h3>
+        <p>I'm the collapsible content for section 1</p>
+    </div>
+    <div data-role="collapsible">
+        <h3>Section 2</h3>
+        <p>I'm the collapsible content for section 2</p>
+    </div>
+    <div data-role="collapsible">
+        <h3>Section 3</h3>
+        <p>I'm the collapsible content for section 3</p>
+    </div>
+</div>
+<a href="#" data-role="button" data-icon="plus" data-iconpos="notext" data-inline="true">Plus</a>
+<a href="#" data-role="button" data-icon="minus" data-iconpos="notext" data-inline="true">Minus</a>
+<a href="#" data-role="button" data-icon="delete" data-iconpos="notext" data-inline="true">Delete</a>
+<a href="#" data-role="button" data-icon="arrow-l" data-iconpos="notext" data-inline="true">Arrow left</a>
+<a href="#" data-role="button" data-icon="arrow-r" data-iconpos="notext" data-inline="true">Arrow right</a>
+<a href="#" data-role="button" data-icon="arrow-u" data-iconpos="notext" data-inline="true">Arrow up</a>
+<a href="#" data-role="button" data-icon="arrow-d" data-iconpos="notext" data-inline="true">Arrow down</a>
+<a href="#" data-role="button" data-icon="check" data-iconpos="notext" data-inline="true">Check</a>
+<a href="#" data-role="button" data-icon="gear" data-iconpos="notext" data-inline="true">Gear</a>
+<a href="#" data-role="button" data-icon="refresh" data-iconpos="notext" data-inline="true">Refresh</a>
+<a href="#" data-role="button" data-icon="forward" data-iconpos="notext" data-inline="true">Forward</a>
+<a href="#" data-role="button" data-icon="back" data-iconpos="notext" data-inline="true">Back</a>
+<a href="#" data-role="button" data-icon="grid" data-iconpos="notext" data-inline="true">Grid</a>
+<a href="#" data-role="button" data-icon="star" data-iconpos="notext" data-inline="true">Star</a>
+<a href="#" data-role="button" data-icon="alert" data-iconpos="notext" data-inline="true">Alert</a>
+<a href="#" data-role="button" data-icon="info" data-iconpos="notext" data-inline="true">Info</a>
+<a href="#" data-role="button" data-icon="home" data-iconpos="notext" data-inline="true">Home</a>
+<a href="#" data-role="button" data-icon="search" data-iconpos="notext" data-inline="true">Search</a>
+<a href="#" data-role="button" data-icon="gear" data-theme="b">Default</a>
+
+			</div>
+            </div>
+      <div data-role="footer" class="ui-bar" data-theme="b">
+
+
+<div data-role="controlgroup" data-type="horizontal" data-mini="true">
+    <a href="#" data-role="button" data-iconpos="notext" data-icon="plus" data-theme="b">Add</a>
+    <a href="#" data-role="button" data-iconpos="notext" data-icon="delete" data-theme="b">Delete</a>
+    <a href="#" data-role="button" data-iconpos="notext" data-icon="grid" data-theme="b">More</a>
+</div>
+</div>     
+		</div>
+	</body>
+</html>
